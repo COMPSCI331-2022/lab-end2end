@@ -5,11 +5,9 @@ Before you start
 ----------
 The purpose of this lab is to reinforce and build upon the course material, gaining more practice with JPA, Jackson, and JAX-RS in the end-to-end development of a simple Concert service.
 
-You may work individually or in teams of any size up to a maximum of 5 members. However if you do work in a team, note the assessment guidelines. If you work individually, you must still join a "group" on Canvas and a "team" on Github (because we still need to track who is doing what).
+**This lab does NOT allow you to change your teams (of 3) from what you formed for your project.** As usual, you must join your "group" on Canvas and your "team" on Github, and must provide a `Team.md` file. 
 
-You must provide a `Team.md` file. If you are working individually, your file must state that. Otherwise it should be used as for past labs.
-
-Note: there is a recording discussion JPQL on Canvas.
+**Note:** There is a recording discussing **JPQL** on Canvas.
 
 Exercise - Develop a stateless Concert Web service that uses ORM
 ----------
@@ -79,7 +77,7 @@ TypedQuery<Concert> concertQuery = em.createQuery("select c from Concert c", Con
 List<Concert> concerts = concertQuery.getResultList();
 ```
 
-Resources for JPQL have been provided on Canvas. For further information, the Java Enterprise tutorial includes a chapter on JPQL: <https://docs.oracle.com/javaee/7/tutorial/persistence-querylanguage.htm>.
+Resources, including an add-on lecture video, for JPQL have been provided on Canvas. For further information, the Java Enterprise tutorial includes a chapter on JPQL: <https://docs.oracle.com/javaee/7/tutorial/persistence-querylanguage.htm>.
 
 ###### EntityManager usage scenario
 
@@ -108,11 +106,10 @@ Once you've added the metadata, `Application` and `Resource` classes, build and 
 
 You may run just the domain model unit tests (`DomainModelTest`) directly from your IDE, if you would like to make sure your annotations are correct before proceeding to implement the web service.
 
-You might want to use the H2 console so see the tables that have been generated and populated. 
+You might want to use the H2 console to see the tables that have been generated and populated. 
 
 #### Github Classroom
-After you finish all exercises and push the code to the repository on Github,
-and confirm that the execution of `Github classroom workflow` runs successfully without any failed test.
+The submission for this lab will follow the same final step previous labs, which means you will be creating a **"submission"** branch and push your final code to that branch for submission. Note that as previous labs this must be done (as a team) once you are fully satisfied with your code and have successfully tested your code locally. Again, only 3 attempts for pushing to "submission" branch are allowed. Except for this, there are no other rules for how you manage your braching for this lab. After you finish all exercises and push the code to the repository on Github, please check if the execution of `Github classroom workflow` runs successfully without any test fails.
 
 Points to consider
 ----------
@@ -125,21 +122,20 @@ Points to consider
 
 ## Assessment
 
-The marking of this lab will be based on your team repository as of Friday 23rd April 1700hrs.
+The marking of this lab will be based on your team repository as of **Monday 11 April 1700hrs NZ time**. Note that extra three days are provided to accomodate your preparation for Quiz 1, scheduled for Friday of Week 6 1800hrs. As well as the changes made to it for the above exercises, you must include a file <tt>Team.md</tt> containing the list of members in your
+team along with UPIs and a brief summary of what role each member played. Please also include, for each member, what their Github account name is. If this file is not provided then there will be a **50% penalty**. As notified via Week02Lab General Feedback and Week 04 Study Plan annoucements, you must enter richer discussions/issues and commit messages supporting your work. Providing clearly visible evidence of your team contribution and coorperation is your responsibility.
 
-Assessment will be performed by examining the commit logs and other
-information associated with your repository.  If you are working in a team,
-you must demonstrate that you have engaged with the lab material and fully
-participated with the team. This means we expect to see non-trivial commits,
-with meaningful commit messages. As with past labs, we will be looking for
-evidence that there was cooperation and collaboration within the
-team. Examples including making useful commits, and commenting on actions by
-other team members.
+**You must enter your initial team communication via GitHub Discussions before Thursday, 31 March 17:00hrs NZ time**. Some examples of this evidence could be: who does what, by when you plan to finish the exercises, constraints, planning notes, etc. Additionally, feel free to use GitHub Issues to report and discuss specific issues that you face while working on the exercises. If you end up using both Discussions and Issues, clearly state this in Team.md. If you fail to add any notes to Discussions before the Initial Team Communication deadline, **25% penalty** will be applied to the lab marks.
 
-If you join a team without permission of existing team members you will receive zero for the lab. Teamwork requires cooperation.
+**Note that your team (one of the team members to push on behalf of the team) must NOT push to the "submission" branch on remote (GitHub repo) more than 3 times**. Executing workflows incurs cost, and you must make sure you do not violate this rule while making your submissions. **Violating this rule will bring penalties too**. To be safe, never push to submission branch unless you have fully tested your final code. 
 
-Marks will be allocated as follows (maximum of 2 marks, minimum of 0):
+Overall, the assessment will be performed by examining the **code, commit logs, Team.md, comments recorded in GitHub Discussions and other
+information associated with your team repository**. You must demonstrate that
+you have engaged with the lab material and fully participated with the
+team. This means we expect to see non-trivial commits, with meaningful commit
+messages, corresponding to each exercise. Different team members will do
+different things and different times, but we will be looking for evidence that
+there was team cooperation and collaboration. Examples including making useful
+commits, communications via GitHub Discussions e.g. commenting on actions by other team members, resolving conflicts, etc. 
 
-- If any tests do not pass, 1 mark will be deducted from the possible score from all team members
-- Any member that we cannot find evidence of having contributed to the lab will have 2 marks deducted. Note that just a statement in `Team.md` will not be sufficient evidence.
-- If there is no `Team.md` file or it does not contain the relevant information, 1 mark will be deducted from all team members
+**Note:** Your team may **NOT** be different to that of project. See more details about this on the Canvas Assignments page.
